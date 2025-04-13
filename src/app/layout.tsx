@@ -1,5 +1,10 @@
-import { Header } from "@/components/Header/Header";
 import type { Metadata } from "next";
+
+//components
+import { Header } from "@/components/Header/Header";
+import { Footer } from "@/components/Footer/Footer";
+
+//style
 import { Manrope } from "next/font/google";
 import "./globals.css";
 
@@ -24,8 +29,13 @@ export default function RootLayout({
       <body
         className={`${manrope.className} bg-black`}
       >
+      <div className="flex flex-col min-h-[100vh]">
         <Header/>
-        {children}
+        <main className="flex-1">
+          {children}
+        </main>
+        <Footer/>
+      </div>
       </body>
     </html>
   );
