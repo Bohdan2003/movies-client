@@ -1,0 +1,19 @@
+.custom-bullet {
+    cursor: pointer;
+    width: 10px;
+    height: 4px;
+    background-color: #333333;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border-radius: 9999px;
+}
+.custom-bullet-active {
+    width: 20px;
+    background-color: #E50000;
+    opacity: 1;
+}
+
+.swiper-button-disabled{
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
